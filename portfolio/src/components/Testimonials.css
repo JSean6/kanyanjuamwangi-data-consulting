@@ -1,0 +1,91 @@
+/* ─────────────────────────────────────────
+   Testimonials.css
+───────────────────────────────────────── */
+
+.testimonials {
+  padding: var(--section-pad) var(--side-pad);
+  background: var(--paper);
+  border-top: 1px solid var(--border-light);
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+
+.testimonials__card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 40px 36px;
+  transition: box-shadow 0.3s, transform 0.3s var(--ease);
+}
+.testimonials__card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+}
+
+/* Large decorative opening quote mark */
+.testimonials__quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+  font-style: italic;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--ink);
+  margin-bottom: 32px;
+  border: none;
+  padding: 0;
+  position: relative;
+}
+.testimonials__quote::before {
+  content: '\201C';
+  font-size: 4rem;
+  line-height: 0;
+  vertical-align: -1.5rem;
+  color: var(--border);
+  font-style: normal;
+  margin-right: 4px;
+  font-family: var(--font-display);
+}
+
+.testimonials__author {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.testimonials__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--paper-2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  color: var(--ink);
+}
+
+.testimonials__author-info strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.testimonials__author-info span {
+  font-size: 0.78rem;
+  color: var(--ink-light);
+}
+
+@media (min-width: 768px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
