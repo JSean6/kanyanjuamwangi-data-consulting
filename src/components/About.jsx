@@ -22,11 +22,11 @@ export default function About({ showCta = false }) {
 
         <div className="about__right reveal reveal-delay-2">
           <p>
-            I work with Kenyan startups and small businesses to improve
-            profitability through better cash flow management, practical strategy,
-            and data-driven decision making. My goal is to simplify business data
-            into clear insights that help entrepreneurs increase revenue, control
-            costs, and grow sustainably.
+            I work with Kenyan small and medium enterprises to improve
+            profitability through better cash flow management, 
+            practical strategy, and data-driven decision making. 
+            My goal is to simplify business data into clear insights that help entrepreneurs
+            increase revenue, control costs, and grow sustainably.
           </p>
 
           <div className="about__values">
