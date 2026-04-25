@@ -7,11 +7,9 @@ const SKILLS = [
   'Revenue Analysis',
   'Profitability Modeling',
   'Business Reporting',
-  'SME Consulting',
   'Data Interpretation',
   'Strategic Planning',
   'Excel & Spreadsheets',
-  'KPI Dashboards',
   'Cost Optimization',
   'Market Positioning',
 ];
