@@ -275,9 +275,9 @@
   max-width: 900px;
   height: auto;
   aspect-ratio: 9 / 4;
-  object-fit: cover;
+  /* object-fit: cover; */
   display: block;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 @media (max-width: 768px) {
