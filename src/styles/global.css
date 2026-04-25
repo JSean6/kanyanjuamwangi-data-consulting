@@ -270,10 +270,20 @@
   color: var(--ink-light);
 }
 
-.project-img{
-  width: 900px;
-  height: 400px;
-  object-fit:fill;
+.project-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  aspect-ratio: 9 / 4;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .project-img {
+    aspect-ratio: 16 / 9;
+  }
 }
 
 /* ── Case study card (projects page) ── */
