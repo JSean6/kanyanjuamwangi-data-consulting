@@ -9,7 +9,7 @@ const Hero = () => {
 
       <div className="hero__layout">
         <div className="hero__inner">
-          <div className="hero__eyebrow">Business Consultant — Nairobi, Kenya</div>
+          <div className="hero__eyebrow">Data Consultant — Nairobi, Kenya</div>
 
           <h1 className="hero__name">
             Hi, I'm <em>Kanyanjua</em>
@@ -23,7 +23,7 @@ const Hero = () => {
           </p>
 
           <p className="hero__desc">
-            Practical business consulting for startups and small enterprises —
+            Practical business data consulting for startups and small enterprises —
             strategy, operations, revenue growth, and cash flow solutions that
             deliver real results without big budgets.
           </p>

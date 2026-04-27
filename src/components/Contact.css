@@ -80,41 +80,66 @@
   padding: 6px 12px;
   border-radius: 1px;
   transition: background 0.25s, color 0.25s;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.5rem; 
 }
 .contact__social-link:hover {
   background: var(--ink);
   color: var(--white);
 }
-
 .contact__info-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 24px; /* Slightly more breathing room */
 }
+
 .contact__info-item {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 6px;
 }
+
+.contact__info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between icon and text */
+}
+
+.contact__info-icon {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem; /* Keeps icons subtle but visible */
+  color: var(--ink);
+}
+
 .contact__info-label {
+  font-family: var(--font-mono);
   font-size: 0.66rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-light);
+  line-height: 1;
 }
+
 .contact__info-value {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--ink);
+  padding-left: 24px; /* Aligns the text exactly under the label, skipping the icon width */
 }
+
 .contact__info-value a {
   color: var(--ink);
   text-decoration: none;
-  transition: color 0.2s;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
 }
+
 .contact__info-value a:hover {
   color: var(--ink-light);
+  border-bottom: 1px solid var(--border);
 }
 
 .contact__hours-list {
@@ -149,3 +174,4 @@
     grid-template-columns: 1.2fr 1fr 1fr;
   }
 }
+

@@ -8,7 +8,6 @@
   overflow: hidden;
 }
 
-/* Subtle dot-grid texture */
 .hero__grid-bg {
   position: absolute;
   inset: 0;
@@ -33,7 +32,6 @@
   max-width: 780px;
 }
 
-/* Each child animates in with staggered delays */
 .hero__eyebrow {
   font-family: var(--font-mono);
   font-size: 0.7rem;
@@ -47,6 +45,7 @@
   opacity: 0;
   animation: heroFadeUp 0.9s var(--ease) 0.2s forwards;
 }
+
 .hero__eyebrow::before {
   content: '';
   display: block;
@@ -67,6 +66,7 @@
   opacity: 0;
   animation: heroFadeUp 1s var(--ease) 0.35s forwards;
 }
+
 .hero__name em {
   font-style: italic;
 }
@@ -101,10 +101,8 @@
   animation: heroFadeUp 1s var(--ease) 0.8s forwards;
 }
 
-/* Floating stats */
 .hero__stats {
   position: absolute;
-  bottom: 56px;
   right: var(--side-pad);
   display: flex;
   gap: 40px;
