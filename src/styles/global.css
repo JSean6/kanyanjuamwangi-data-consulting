@@ -275,7 +275,6 @@
   max-width: 900px;
   height: auto;
   aspect-ratio: 9 / 4;
-  /* object-fit: cover; */
   display: block;
   border-radius: 4px;
 }
@@ -331,6 +330,7 @@
   grid-template-columns: 1fr;
   gap: 32px;
 }
+
 @media (min-width: 768px) {
   .case-study__body { grid-template-columns: 1fr 1fr; }
 }
